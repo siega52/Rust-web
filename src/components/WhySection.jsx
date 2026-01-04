@@ -5,7 +5,7 @@ const WhySection = () => {
   return (
     <section className="why-section" id="why">
       <div className="why-background">
-        {/* <div className="bg-overlay"></div> */}
+        <div className="bg-overlay"></div>
       </div>
 
       <div className="why-container">
@@ -26,9 +26,9 @@ const WhySection = () => {
               <div className="card-header">
                 <h3 className="card-title">Обширный выбор</h3>
               </div>
-              <p className="card-description">
-                Мы предлагаем читы для самых различных игр, включая популярные игры.
-              </p>
+                <p className="card-description">
+                  Мы предлагаем читы для самых различных игр, включая популярные игры.
+                </p>
             </div>
 
             <div className="why-card card-2">
