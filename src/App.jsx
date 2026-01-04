@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
-import Main from './components/Main';
-// import Hero from './components/Hero';
+import MainSection from './components/MainSection';
+import WhySection from './components/WhySection';
 import '/src/styles/App.css';
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
       
       <div className="app__content">
         <Header /> 
-        <Main />
+        <MainSection />
+        <WhySection />
       </div>
     </div>
   );

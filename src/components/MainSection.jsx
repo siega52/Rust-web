@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import '/src/styles/Main.css';
+import '/src/styles/MainSection.css';
 
-const Main = () => {
+const MainSection = () => {
 
   return (
     <main className="main-section">
       <div className="background-image"></div>
-      <div className="background-overlay"></div>
+      {/* <div className="background-overlay"></div> */}
       <div className="main-container">
         <div className="main-content">
           <div className="title-container">
@@ -51,4 +51,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainSection;
