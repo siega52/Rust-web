@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: 'Rust-web',
+  base: '/Rust-web/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets'
