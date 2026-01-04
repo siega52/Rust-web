@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import MainSection from './components/MainSection';
 import WhySection from './components/WhySection';
+import BuySection from './components/BuySection';
 import '/src/styles/App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Header /> 
         <MainSection />
         <WhySection />
+        <BuySection />
       </div>
     </div>
   );
