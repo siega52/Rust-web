@@ -40,8 +40,6 @@ const Modal = ({ isOpen, onClose, product }) => {
         </button>
         
         <div className="modal-header">
-          <h2 className="modal-title">Оформление подписки</h2>
-          <p className="modal-subtitle">Заполните форму для покупки</p>
         </div>
         
         <div className="modal-content">
@@ -88,10 +86,7 @@ const Modal = ({ isOpen, onClose, product }) => {
                 onChange={handleInputChange}
                 required
               />
-              <label htmlFor="agreement">
-                Я согласен с <a href="/terms" className="agreement-link">правилами использования</a> и 
-                <a href="/privacy" className="agreement-link"> политикой конфиденциальности</a>
-              </label>
+              <label htmlFor="agreement">C политикой конфиденциальности, политикой возврата и условия использования - ознакомлен.</label>
             </div>
             
             <button type="submit" className="form-submit">
@@ -100,15 +95,7 @@ const Modal = ({ isOpen, onClose, product }) => {
             </button>
           </div>
           
-        </div>
-        
-        <div className="modal-footer">
-          <p className="footer-text">
-            ❗ После оплаты активация происходит в течение 5 минут. 
-            Ключ придет на указанный email.
-          </p>
-        </div>
-        
+        </div>        
       </form>
     </div>
   );

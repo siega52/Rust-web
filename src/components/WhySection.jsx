@@ -4,9 +4,7 @@ import '/src/styles/WhySection.css';
 const WhySection = () => {
   return (
     <section className="why-section" id="why">
-      <div className="why-background">
-        <div className="bg-overlay"></div>
-      </div>
+      {/* <div className="why-background"><div className="bg-overlay"></div></div> */}
 
       <div className="why-container">
         <div className="why-main-content">

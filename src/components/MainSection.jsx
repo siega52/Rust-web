@@ -6,7 +6,7 @@ import Group2 from '/src/img/Group-2.png';
 const MainSection = () => {
   return (
     <main className="main-section">
-      <div className="background-image"></div>
+      {/* <div className="background-image"></div> */}
       <div className="main-container">
         <div className="main-content">
           <div className="title-container">

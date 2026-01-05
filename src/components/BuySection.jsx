@@ -23,9 +23,7 @@ const BuySection = () => {
 
   return (
     <section className="buy-section" id="buy">
-      <div className="buy-background">
-        <div className="bg-overlay"></div>
-      </div>
+      {/* <div className="buy-background"><div className="bg-overlay"></div></div> */}
 
       <div className="buy-container">
         <div className="buy-header">
@@ -56,7 +54,7 @@ const BuySection = () => {
                     <img src={Tags} alt="tags" />
                 </div>
                 <div className="card-name">
-                    <h3 className="card-name-im">IMMORTAL</h3>
+                    <h3 className="card-name-im">{mainProduct.title}</h3>
                 </div>
                 <div className="price-block">
                   <span className="price-amount">{mainProduct.price}</span>

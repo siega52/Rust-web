@@ -51,7 +51,6 @@ export const products: Product[] = [
   }
 ];
 
-
 export const productsAPI = {
   // Получить все продукты
   getAllProducts: (): Product[] => {
