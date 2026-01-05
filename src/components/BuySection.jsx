@@ -62,10 +62,12 @@ const BuySection = () => {
                   <span className="price-amount">{mainProduct.price}</span>
                 </div>
                 
-                <p className="card-description">
-                  Подтверждаю удобную доступ к сконфирмациям компонентов.
+                <p className="card-description-buy">
+                  Партнёрский уровень доступа с коммерческими возможностями.
                 </p>
-                
+                <p className="card-description-buy">
+                  Преимущества:
+                </p>                
                 <div className="features-list">
                   <div className="feature-item">
                     <span className="feature-icon"><img src={Mask} alt="Mask" /></span>
@@ -107,35 +109,24 @@ const BuySection = () => {
                     className="product-image-small"
                   />
                 </div>
-                <div className="small-card-titles">
-                  <h3 className="card-type">{product.title}</h3>
-                  <h4 className="card-subtype">{product.subtitle}</h4>
-                </div>
               </div>
-              
-              <div className="small-card-badge">
-                <span className="badge-label">LEGENDARY</span>
+              <div className="small-card-titles">
+                <h3 className="card-type">{product.title}</h3>
               </div>
-              
               <div className="small-card-price">
                 <span className="price">{product.price}</span>
-                <span className="period">/ месяц</span>
               </div>
               
-              <p className="small-card-description">
-                Пояснившись лицензии с дополнительными производствами.
-              </p>
+              <p className="small-card-description">{product.subtitle}</p>
               
               <button 
                 className="buy-button small-buy-button"
-                onClick={() => handleBuyClick(product)}
-              >
+                onClick={() => handleBuyClick(product)}>
                 <span className="button-text">ПРИОБРЕСТИ</span>
               </button>
             </div>
           ))}
         </div>
-
       </div>
 
       {/* Модальное окно */}

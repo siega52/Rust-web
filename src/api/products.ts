@@ -12,40 +12,40 @@ export const products: Product[] = [
     title: "IMMORTAL",
     subtitle: "",
     img: "./src/img/Rectangle-18.png",
-    price: "49.990 ₽" 
+    price: "49.990 ₽"
   },
   {
     id: 2,
     title: "LEGENDARY",
-    subtitle: "",
+    subtitle: "Пожизненная лицензия с дополнительными привилегиями.",
     img: "./src/img/Group-5.png",
     price: "9979 ₽"
   },
   {
     id: 3,
     title: "COMBATER",
-    subtitle: "",
+    subtitle: "Расширенный тариф с повышенным сроком и возможн...",
     img: "./src/img/Group-6.png",
     price: "3979 ₽"
   },
   {
     id: 4,
     title: "BUILDER",
-    subtitle: "",
+    subtitle: "Рекомендованный тариф для тех, кто хочет получить доступ к ...",
     img: "./src/img/Group-7.png",
     price: "1979 ₽"
   },
   {
     id: 5,
     title: "RAIDER",
-    subtitle: "",
+    subtitle: "Стартовый тариф с увеличенным сроком использования.",
     img: "./src/img/Group-8.png",
     price: "979 ₽"
   },
   {
     id: 6,
     title: "EOKA",
-    subtitle: "",
+    subtitle: "Пробный тариф для первичного знакомства с платформой.",
     img: "./src/img/Group-9.png",
     price: "289 ₽"
   }
