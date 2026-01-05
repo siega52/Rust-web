@@ -20,22 +20,15 @@ const Modal = ({ isOpen, onClose, product }) => {
     }));
   };
 
-  const handlePaymentSelect = (method) => {
-    setSelectedPayment(method);
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Здесь будет логика отправки данных на сервер
+    // Здесь будет в будущем логика отправки данных на сервер
     console.log('Отправка данных:', {
       product,
       payment: selectedPayment,
       ...formData
     });
-    
-    // Закрываем модалку после успешной отправки
-    // onClose();
   };
 
   return (
@@ -61,10 +54,9 @@ const Modal = ({ isOpen, onClose, product }) => {
               </div>
               
               <div className="product-name">
-                <h3>{product.title} - {product.subtitle}</h3>
+                <h3>{product.title}</h3>
                 <div className="product-price">
                   <span className="price-amount">{product.price}</span>
-                  <span className="price-period">/ месяц</span>
                 </div>
               </div>
               
@@ -84,86 +76,8 @@ const Modal = ({ isOpen, onClose, product }) => {
               </div>
             </div>
           )}
-          
-          {/* Форма покупки */}
+        
           <div className="purchase-form">
-            <div className="form-group">
-              <label htmlFor="email">Email *</label>
-              <input 
-                type="email" 
-                id="email"
-                name="email"
-                placeholder="your@email.com"
-                className="form-input"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="username">Имя пользователя *</label>
-              <input 
-                type="text" 
-                id="username"
-                name="username"
-                placeholder="Ваш никнейм в игре"
-                className="form-input"
-                value={formData.username}
-                onChange={handleInputChange}
-                required
-              />
-            </div>
-            
-            <div className="form-group">
-              <label htmlFor="game">Игра *</label>
-              <select 
-                id="game" 
-                name="game"
-                className="form-select"
-                value={formData.game}
-                onChange={handleInputChange}
-                required
-              >
-                <option value="">Выберите игру</option>
-                <option value="rust">Rust</option>
-                <option value="cs2">Counter-Strike 2</option>
-                <option value="valorant">Valorant</option>
-                <option value="lol">League of Legends</option>
-                <option value="other">Другая игра</option>
-              </select>
-            </div>
-            
-            <div className="form-group">
-              <label>Способ оплаты *</label>
-              <div className="payment-methods">
-                <button 
-                  type="button"
-                  className={`payment-method ${selectedPayment === 'card' ? 'active' : ''}`}
-                  onClick={() => handlePaymentSelect('card')}
-                >
-                  <span className="payment-icon">💳</span>
-                  <span>Банковская карта</span>
-                </button>
-                <button 
-                  type="button"
-                  className={`payment-method ${selectedPayment === 'crypto' ? 'active' : ''}`}
-                  onClick={() => handlePaymentSelect('crypto')}
-                >
-                  <span className="payment-icon">₿</span>
-                  <span>Криптовалюта</span>
-                </button>
-                <button 
-                  type="button"
-                  className={`payment-method ${selectedPayment === 'exchange' ? 'active' : ''}`}
-                  onClick={() => handlePaymentSelect('exchange')}
-                >
-                  <span className="payment-icon">🤝</span>
-                  <span>Обмен</span>
-                </button>
-              </div>
-            </div>
-            
             <div className="form-agreement">
               <input 
                 type="checkbox" 

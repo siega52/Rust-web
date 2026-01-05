@@ -24,7 +24,7 @@ const BuySection = () => {
   return (
     <section className="buy-section" id="buy">
       <div className="buy-background">
-        {/* <div className="bg-overlay"></div> */}
+        <div className="bg-overlay"></div>
       </div>
 
       <div className="buy-container">

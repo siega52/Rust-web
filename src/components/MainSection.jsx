@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import '/src/styles/MainSection.css';
 import Group3 from '/src/img/Group-3.png';
 import Group2 from '/src/img/Group-2.png';
