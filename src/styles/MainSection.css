@@ -51,8 +51,11 @@
 }
 
 .main-content {
-  flex: 1;
+  flex: 0 0 55%; 
   max-width: 600px;
+  position: relative;
+  z-index: 2; 
+  margin-right: -150px; 
 }
 
 .title-container {
@@ -162,15 +165,16 @@
 /* Правая часть с изображением */
 .main-image-container {
   flex: 1;
-  max-width: 1164px;
   position: relative;
+  z-index: 1; 
 }
 
 .image-wrapper {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  transform: perspective(1000px) rotateY(-5deg);
   transition: transform 0.5s ease;
 }
 
@@ -179,11 +183,11 @@
 }
 
 .hero-image {
-  width: 100%;
   height: auto;
   display: block;
   filter: contrast(1.1) saturate(1.1);
   transition: transform 0.5s ease;
+  object-fit: contain;
 }
 
 .image-wrapper:hover .hero-image {
