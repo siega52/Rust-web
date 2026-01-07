@@ -1,6 +1,11 @@
 import React from 'react';
 import '/src/styles/Footer.css';
 import Pay from '/src/img/pay.png'
+import ds from '/src/img/social/discord.png';
+import sp from '/src/img/social/support.png';
+import tg from '/src/img/social/tg.png';
+import vk from '/src/img/social/vk.png';
+import yt from '/src/img/social/yt.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -71,38 +76,20 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Колонка 3: Подпишись на нас */}
           <div className="footer-column">
             <h3 className="column-title">ПОДПИШИСЬ НА НАС</h3>
             <div className="social-links">
-              <a href="https://t.me/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer">
-                {/* <MessageCircle size={20} /> */}
-                <span>Telegram</span>
-              </a>
-              <a href="https://discord.gg/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer">
-                {/* <MessageCircle size={20} /> */}
-                <span>Discord</span>
-              </a>
-              <a href="https://youtube.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer">
-                {/* <Youtube size={20} /> */}
-                <span>YouTube</span>
-              </a>
-              <a href="https://twitter.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer">
-                {/* <Twitter size={20} /> */}
-                <span>Twitter</span>
-              </a>
-              <a href="https://github.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer">
-                {/* <Github size={20} /> */}
-                <span>GitHub</span>
-              </a>
+              <a href="https://t.me/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={tg} alt="tg" /></a>
+              <a href="https://discord.gg/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={ds} alt="tg" /></a>
+              <a href="https://youtube.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={yt} alt="tg" /></a>
+              <a href="https://twitter.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={vk} alt="tg" /></a>
             </div>
             
             <div className="support-section">
-              <h4 className="support-title">Поддержка</h4>
+              <a href="https://github.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={sp} alt="tg" /></a>
             </div>
           </div>
 
-          {/* Колонка 4: О проекте */}
           <div className="footer-column">
             <h3 className="column-title">О ПРОЕКТЕ</h3>
             <div className="project-description">
@@ -115,7 +102,6 @@ const Footer = () => {
 
         </div>
 
-        {/* Нижняя строка с копирайтом и платежными методами */}
         <div className="footer-bottom-row">
           <div className="copyright">
             <p className="copyright-text">

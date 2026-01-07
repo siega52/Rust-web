@@ -106,9 +106,6 @@
 /* Колонка 3: Социальные сети */
 .social-links {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 30px;
 }
 
 .social-link {
@@ -118,27 +115,13 @@
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid transparent;
   transition: all 0.3s ease;
+  margin-right: 20px;
+  margin-bottom: 12px;
 }
 
 .social-link:hover {
-  background: rgba(255, 0, 0, 0.1);
-  border-color: rgba(255, 0, 0, 0.3);
-  color: #ffffff;
   transform: translateX(5px);
-}
-
-.social-link svg {
-  color: #ff0000;
-}
-
-/* Поддержка */
-.support-section {
-  margin-top: auto;
 }
 
 .support-title {
