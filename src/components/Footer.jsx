@@ -12,10 +12,7 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      {/* Основной контейнер футера */}
       <div className="footer-container">
-        
-        {/* Верхняя строка с названием и предупреждением */}
         <div className="footer-top-row">
           <div className="footer-brand">
             <h2 className="brand-name">DEADXMACRO</h2>
@@ -29,47 +26,43 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Основное содержимое - 4 колонки */}
         <div className="footer-content">
-          
-          {/* Колонка 1: Навигация */}
           <div className="footer-column">
             <h3 className="column-title">НАВИГАЦИЯ</h3>
             <ul className="column-links">
               <li>
-                <a href="/catalog" className="footer-link">
+                <a href="#" className="footer-link">
                   Каталог
                 </a>
               </li>
               <li>
-                <a href="/about" className="footer-link">
+                <a href="#" className="footer-link">
                   О нас
                 </a>
               </li>
               <li>
-                <a href="/guide" className="footer-link">
+                <a href="#" className="footer-link">
                   Руководство
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Колонка 2: Информация */}
           <div className="footer-column">
             <h3 className="column-title">ИНФОРМАЦИЯ</h3>
             <ul className="column-links">
               <li>
-                <a href="/terms" className="footer-link">
+                <a href="#" className="footer-link">
                   Пользовательское соглашение
                 </a>
               </li>
               <li>
-                <a href="/privacy" className="footer-link">
+                <a href="#" className="footer-link">
                   Политика конфиденциальности
                 </a>
               </li>
               <li>
-                <a href="/refund" className="footer-link">
+                <a href="#" className="footer-link">
                   Политика возврата
                 </a>
               </li>
@@ -80,13 +73,13 @@ const Footer = () => {
             <h3 className="column-title">ПОДПИШИСЬ НА НАС</h3>
             <div className="social-links">
               <a href="https://t.me/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={tg} alt="tg" /></a>
-              <a href="https://discord.gg/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={ds} alt="tg" /></a>
-              <a href="https://youtube.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={yt} alt="tg" /></a>
-              <a href="https://twitter.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={vk} alt="tg" /></a>
+              <a href="https://discord.com/invite/pfejrCXKDx" className="social-link" target="_blank" rel="noopener noreferrer"><img src={ds} alt="tg" /></a>
+              <a href="https://www.youtube.com/c/DEADXMACROSTORE" className="social-link" target="_blank" rel="noopener noreferrer"><img src={yt} alt="tg" /></a>
+              <a href="https://vk.com/produceddeadx" className="social-link" target="_blank" rel="noopener noreferrer"><img src={vk} alt="tg" /></a>
             </div>
             
             <div className="support-section">
-              <a href="https://github.com/deadxmacro" className="social-link" target="_blank" rel="noopener noreferrer"><img src={sp} alt="tg" /></a>
+              <a href="#" className="social-link" target="_blank" rel="noopener noreferrer"><img src={sp} alt="tg" /></a>
             </div>
           </div>
 

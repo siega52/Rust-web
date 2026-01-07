@@ -6,8 +6,11 @@
 }
 
 body {
-  /* background-image: url('/src/img/bg.png'); */
   background-color: #1F2227;
+  background-image: url('/src/img/Group 446.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff;
   min-height: 100vh;
   overflow-x: hidden;
