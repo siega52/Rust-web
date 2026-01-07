@@ -1,3 +1,10 @@
+import image1 from '/src/img/Rectangle-18.png';
+import image2 from '/src/img/Group-5.png';
+import image3 from '/src/img/Group-6.png';
+import image4 from '/src/img/Group-7.png';
+import image5 from '/src/img/Group-8.png';
+import image6 from '/src/img/Group-9.png';
+
 export interface Product {
   id: number;
   title: string;
@@ -11,42 +18,42 @@ export const products: Product[] = [
     id: 1,
     title: "IMMORTAL",
     subtitle: "",
-    img: "./src/img/Rectangle-18.png",
+    img: image1,
     price: "49.990 ₽"
   },
   {
     id: 2,
     title: "LEGENDARY",
     subtitle: "Пожизненная лицензия с дополнительными привилегиями.",
-    img: "./src/img/Group-5.png",
+    img: image2,
     price: "9979 ₽"
   },
   {
     id: 3,
     title: "COMBATER",
     subtitle: "Расширенный тариф с повышенным сроком и возможн...",
-    img: "./src/img/Group-6.png",
+    img: image3,
     price: "3979 ₽"
   },
   {
     id: 4,
     title: "BUILDER",
     subtitle: "Рекомендованный тариф для тех, кто хочет получить доступ к ...",
-    img: "./src/img/Group-7.png",
+    img: image4,
     price: "1979 ₽"
   },
   {
     id: 5,
     title: "RAIDER",
     subtitle: "Стартовый тариф с увеличенным сроком использования.",
-    img: "./src/img/Group-8.png",
+    img: image5,
     price: "979 ₽"
   },
   {
     id: 6,
     title: "EOKA",
     subtitle: "Пробный тариф для первичного знакомства с платформой.",
-    img: "./src/img/Group-9.png",
+    img: image6,
     price: "289 ₽"
   }
 ];
