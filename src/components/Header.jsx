@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Group369 from '/src/img/Group-369.png';
 import '/src/styles/Header.css';
 
 const Header = () => {
@@ -53,7 +54,7 @@ const Header = () => {
               <span className="btn-glow"></span>
             </button>
             <button className="btn btn-secondary">
-              <img src="./src/img/Group 369.png" alt="" /><span className="btn-text">ВОЙТИ</span>
+              <img src={Group369} alt="" /><span className="btn-text">ВОЙТИ</span>
             </button>
           </div>
         </div>
