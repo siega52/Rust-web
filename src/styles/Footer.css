@@ -156,7 +156,6 @@
   font-weight: 500;
 }
 
-/* Колонка 4: О проекте */
 .project-description {
   color: #F6F7EB;
   font-size: 20px;
@@ -170,27 +169,17 @@
   gap: 10px;
 }
 
-.feature-item {
+/* .feature-item {
   display: flex;
   align-items: center;
   gap: 10px;
   color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
-  padding: 8px 12px;
+  padding: 0px 12px;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 6px;
   transition: all 0.3s ease;
-}
-
-.feature-item:hover {
-  background: rgba(255, 0, 0, 0.1);
-  color: #ffffff;
-  transform: translateX(5px);
-}
-
-.feature-item svg {
-  color: #ff0000;
-}
+} */
 
 /* Нижняя строка */
 .footer-bottom-row {
