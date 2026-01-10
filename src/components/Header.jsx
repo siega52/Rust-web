@@ -50,8 +50,7 @@ const Header = () => {
           
           <div className="header-buttons">
             <button className="btn btn-primary">
-              <span className="btn-text">ПРИОБРЕСТИ</span>
-              <span className="btn-glow"></span>
+              <span className="btn-textheader ">ПРИОБРЕСТИ</span>
             </button>
             <button className="btn btn-secondary">
               <img src={Group369} alt="" /><span className="btn-text">ВОЙТИ</span>
