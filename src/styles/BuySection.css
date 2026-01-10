@@ -42,13 +42,11 @@
   z-index: 2;
 }
 
-/* Заголовок секции */
 .buy-header {
   text-align: left;
   margin-bottom: 35px;
 }
 
-/* Основная большая карточка */
 .main-card {
   background-color: rgba(180, 138, 46, 0.09);
   border: 1px solid rgba(180, 138, 46, 0.16);
@@ -79,7 +77,6 @@
   gap: 60px;
 }
 
-/* Левая часть основной карточки */
 .main-card-left {
   display: flex;
   flex-direction: column;
@@ -115,7 +112,6 @@
   filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
 }
 
-/* Правая часть основной карточки */
 .main-card-right {
   flex: 1;
   display: flex;
@@ -248,7 +244,6 @@
   left: 100%;
 }
 
-/* Сетка из 5 маленьких карточек */
 .small-cards-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -385,63 +380,9 @@
   transform: translateY(-2px);
 }
 
-/* Таблица с типами подписок */
-.subscription-table {
-  margin-top: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.table-header {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  background: rgba(255, 215, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.table-row {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.table-cell {
-  padding: 20px;
-  text-align: center;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.8);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.table-cell:last-child {
-  border-right: none;
-}
-
-.table-header .table-cell {
-  font-weight: 700;
-  color: #FFD700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.type-cell {
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background: rgba(255, 215, 0, 0.05);
-}
-
-/* Адаптивность */
 @media (max-width: 1200px) {
   .small-cards-grid {
     grid-template-columns: repeat(3, 1fr);
-  }
-  
-  .table-header,
-  .table-row {
-    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -505,16 +446,6 @@
   .small-card {
     height: auto;
     min-height: 400px;
-  }
-  
-  .table-header,
-  .table-row {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .table-cell {
-    padding: 12px;
-    font-size: 12px;
   }
 }
 

@@ -60,7 +60,6 @@
   }
 }
 
-/* Навигационное меню */
 .nav-menu {
   display: flex;
   align-items: center;
@@ -115,14 +114,12 @@
   }
 }
 
-/* Правая часть с кнопками */
 .header-right {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-/* Селектор языка */
 .language-selector {
   display: flex;
   align-items: center;
@@ -163,7 +160,6 @@
   font-size: 12px;
 }
 
-/* Кнопки */
 .header-buttons {
   display: flex;
   gap: 15px;
@@ -227,7 +223,6 @@
   }
 }
 
-/* Адаптивность */
 @media (max-width: 1024px) {
   .header {
     padding: 0 20px;
