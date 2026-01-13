@@ -154,7 +154,6 @@
 }
 
 .main-btn-secondary {
-  /* background: transparent; */
   color: #9b9991;
   border-color: rgba(117, 135, 204, 0.23);
   background-color: rgba(117, 135, 204, 0.19);
@@ -248,7 +247,6 @@
   }
 }
 
-/* Большие планшеты и маленькие десктопы */
 @media (max-width: 1200px) {
   .main-container {
     max-width: 1140px;
@@ -271,7 +269,6 @@
   }
 }
 
-/* Планшеты (ландшафт) */
 @media (max-width: 1024px) {
   .main-container {
     gap: 50px;
@@ -293,7 +290,6 @@
   }
 }
 
-/* Планшеты (портрет) - первое значительное изменение */
 @media (max-width: 900px) {
   .main-section {
     height: auto;
@@ -352,7 +348,6 @@
   }
 }
 
-/* Большие мобильные устройства */
 @media (max-width: 768px) {
   .main-section {
     padding: 60px 0 40px;
@@ -386,7 +381,6 @@
   }
 }
 
-/* Средние мобильные устройства - начинаем скрывать изображение */
 @media (max-width: 650px) {
   .main-image-container {
     max-width: 450px;
@@ -398,10 +392,9 @@
   }
 }
 
-/* Маленькие мобильные устройства - скрываем изображение */
 @media (max-width: 576px) {
   .main-image-container {
-    display: none; /* Полностью скрываем контейнер с изображением */
+    display: none; 
   }
   
   .main-container {
@@ -434,7 +427,6 @@
   }
 }
 
-/* Очень маленькие мобильные устройства */
 @media (max-width: 480px) {
   .main-section {
     padding: 40px 0 30px;
