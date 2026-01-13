@@ -4,6 +4,7 @@ import '/src/styles/Header.css';
 
 const Header = () => {
   const [language, setLanguage] = useState('RU');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="header">
@@ -33,19 +34,10 @@ const Header = () => {
 
         <div className="header-right">
           <div className="language-selector">
-            <button 
-              className={`lang-btn ${language === 'RU' ? 'active' : ''}`}
-              onClick={() => setLanguage('RU')}
-            >
-              RU
-            </button>
+            <button className={`lang-btn ${language === 'RU' ? 'active' : ''}`} onClick={() => setLanguage('RU')}>RU</button>
             <span className="lang-separator">/</span>
-            <button 
-              className={`lang-btn ${language === 'US' ? 'active' : ''}`}
-              onClick={() => setLanguage('US')}
-            >
-              US
-            </button>
+            <button className={`lang-btn ${language === 'US' ? 'active' : ''}`} onClick={() => setLanguage('US')}>US</button>
+            <button className="burger-menu" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>☰</button>
           </div>
           
           <div className="header-buttons">
@@ -58,6 +50,14 @@ const Header = () => {
           </div>
         </div>
 
+      </div>
+
+      {/* Мобильное меню */}
+      <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
+        <a href="#" className="mobile-nav-link">ГЛАВНАЯ</a>
+        <a href="#" className="mobile-nav-link">КАТАЛОГ ИГР</a>
+        <a href="#" className="mobile-nav-link">FAQ & ПОДДЕРЖКА</a>
+        <a href="#" className="mobile-nav-link">НАШИ ГАРАНТИИ</a>
       </div>
     </header>
   );
