@@ -1,5 +1,4 @@
 .main-section {
-  /* font-family: 'Gilroy', sans-serif; */
   height: calc(100vh - 350px);
   display: flex;
   align-items: center;
@@ -96,7 +95,6 @@
   height: 8px;
 }
 
-/* Кнопки */
 .buttons-container {
   display: flex;
   gap: 20px;
@@ -162,7 +160,6 @@
   background-color: rgba(117, 135, 204, 0.19);
 }
 
-/* Правая часть с изображением */
 .main-image-container {
   flex: 1;
   position: relative;
@@ -240,7 +237,6 @@
   letter-spacing: 1px;
 }
 
-/* Адаптивность */
 @media (max-width: 1200px) {
   .main-container {
     max-width: 1140px;
@@ -252,52 +248,118 @@
   }
 }
 
-@media (max-width: 1024px) {
+/* Большие планшеты и маленькие десктопы */
+@media (max-width: 1200px) {
   .main-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 60px;
+    max-width: 1140px;
+    gap: 40px;
+  }
+  
+  .main-title {
+    font-size: 56px;
   }
   
   .main-content {
+    flex: 0 0 50%;
+    max-width: 550px;
+    margin-right: -100px;
+  }
+  
+  .hero-image {
     max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Планшеты (ландшафт) */
+@media (max-width: 1024px) {
+  .main-container {
+    gap: 50px;
   }
   
   .main-title {
     font-size: 48px;
   }
   
-  .main-description {
+  .main-content {
+    flex: 0 0 48%;
+    margin-right: -80px;
+  }
+  
+  .main-btn {
+    padding: 16px 30px;
+    min-width: 180px;
     font-size: 18px;
   }
-  
-  .buttons-container {
-    justify-content: center;
+}
+
+/* Планшеты (портрет) - первое значительное изменение */
+@media (max-width: 900px) {
+  .main-section {
+    height: auto;
+    min-height: calc(100vh - 350px);
+    padding: 80px 0 60px;
   }
   
-  .additional-info {
-    justify-content: center;
+  .main-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
   }
   
-  .info-item {
-    align-items: center;
+  .main-content {
+    flex: none;
+    max-width: 100%;
+    margin-right: 0;
   }
   
-  .image-wrapper {
-    transform: none;
+  .title-container {
+    margin-bottom: 25px;
+  }
+  
+  .main-title {
+    font-size: 42px;
+  }
+  
+  .description-container {
+    margin-bottom: 35px;
+  }
+  
+  .main-description {
+    font-size: 18px;
     max-width: 600px;
     margin: 0 auto;
   }
   
-  .image-wrapper:hover {
-    transform: scale(1.02);
+  .buttons-container {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  .main-image-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .image-wrapper {
+    justify-content: center;
+  }
+  
+  .hero-image {
+    max-width: 85%;
+    height: auto;
   }
 }
 
+/* Большие мобильные устройства */
 @media (max-width: 768px) {
   .main-section {
-    padding: 40px 0;
-    min-height: auto;
+    padding: 60px 0 40px;
+  }
+  
+  .main-container {
+    gap: 40px;
   }
   
   .main-title {
@@ -306,36 +368,78 @@
   
   .main-description {
     font-size: 16px;
+    max-width: 500px;
   }
   
   .main-btn {
-    padding: 15px 30px;
+    padding: 15px 28px;
     min-width: 160px;
-    font-size: 14px;
-  }
-  
-  .buttons-container {
-    gap: 15px;
-  }
-  
-  .additional-info {
-    gap: 15px;
-  }
-  
-  .info-number {
-    font-size: 24px;
-  }
-  
-  .info-text {
-    font-size: 12px;
-  }
-  
-  .info-divider {
     font-size: 16px;
+  }
+  
+  .main-image-container {
+    max-width: 500px;
+  }
+  
+  .hero-image {
+    max-width: 80%;
   }
 }
 
+/* Средние мобильные устройства - начинаем скрывать изображение */
+@media (max-width: 650px) {
+  .main-image-container {
+    max-width: 450px;
+  }
+  
+  .hero-image {
+    max-width: 75%;
+    opacity: 0.9;
+  }
+}
+
+/* Маленькие мобильные устройства - скрываем изображение */
+@media (max-width: 576px) {
+  .main-image-container {
+    display: none; /* Полностью скрываем контейнер с изображением */
+  }
+  
+  .main-container {
+    gap: 30px;
+  }
+  
+  .main-section {
+    padding: 50px 0 30px;
+    min-height: calc(100vh - 300px);
+  }
+  
+  .main-title {
+    font-size: 32px;
+  }
+  
+  .main-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .main-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* Очень маленькие мобильные устройства */
 @media (max-width: 480px) {
+  .main-section {
+    padding: 40px 0 30px;
+  }
+  
   .main-container {
     padding: 0 15px;
   }
@@ -344,23 +448,96 @@
     font-size: 28px;
   }
   
-  .buttons-container {
-    flex-direction: column;
-    align-items: center;
+  .main-description {
+    font-size: 15px;
   }
   
   .main-btn {
-    width: 100%;
-    max-width: 300px;
+    padding: 14px 24px;
+    font-size: 15px;
+    max-width: 260px;
   }
   
-  .additional-info {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  .title-container img {
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-section {
+    padding: 30px 0 20px;
   }
   
-  .info-divider {
+  .main-title {
+    font-size: 24px;
+  }
+  
+  .main-description {
+    font-size: 14px;
+  }
+  
+  .main-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    max-width: 240px;
+  }
+  
+  .buttons-container {
+    gap: 12px;
+  }
+  
+  .title-container img {
+    max-width: 180px;
+  }
+}
+
+/* Альтернативный вариант: скрывать изображение постепенно */
+/* Можно использовать вместо резкого скрытия на 576px */
+
+/* @media (max-width: 650px) {
+  .main-image-container {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 576px) {
+  .main-image-container {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  .main-image-container {
     display: none;
+  }
+} */
+
+/* Для ландшафтной ориентации на мобильных */
+@media (max-height: 600px) and (orientation: landscape) {
+  .main-section {
+    min-height: auto;
+    padding: 30px 0;
+  }
+  
+  .main-container {
+    gap: 20px;
+  }
+  
+  .title-container {
+    margin-bottom: 15px;
+  }
+  
+  .description-container {
+    margin-bottom: 20px;
+  }
+  
+  .buttons-container {
+    margin-bottom: 20px;
+  }
+  
+  .main-image-container {
+    max-width: 300px;
   }
 }
