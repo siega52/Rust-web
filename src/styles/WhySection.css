@@ -186,7 +186,6 @@
   }
 }
 
-/* Средние десктопы и планшеты в ландшафтной ориентации */
 @media (max-width: 1440px) {
   .cards-grid {
     grid-template-columns: 300px 380px 220px 220px;
@@ -233,7 +232,6 @@
   }
 }
 
-/* Планшеты (ландшафт) - упрощаем сетку */
 @media (max-width: 1190px) {
   .why-section {
     padding: 60px 0;
@@ -308,7 +306,6 @@
   }
 }
 
-/* Планшеты (портрет) */
 @media (max-width: 900px) {
   .why-section {
     padding: 50px 0;
@@ -328,7 +325,6 @@
   .card-6 {
     grid-column: 1 / 2;
     width: 100%;
-    height: auto;
     min-height: 180px;
   }
   
@@ -356,7 +352,6 @@
   }
 }
 
-/* Большие мобильные устройства */
 @media (max-width: 768px) {
   .why-section {
     padding: 40px 0;
@@ -399,7 +394,6 @@
   }
 }
 
-/* Средние мобильные устройства */
 @media (max-width: 576px) {
   .why-section {
     padding: 35px 0;
@@ -449,7 +443,6 @@
   }
 }
 
-/* Маленькие мобильные устройства */
 @media (max-width: 480px) {
   .why-section {
     padding: 30px 0;
@@ -484,7 +477,6 @@
   }
 }
 
-/* Очень маленькие экраны */
 @media (max-width: 360px) {
   .why-section {
     padding: 25px 0;
@@ -577,7 +569,6 @@
   }
 }
 
-/* Плавное изменение ховер-эффектов на мобильных */
 @media (max-width: 768px) {
   .why-card:hover {
     transform: translateY(-2px);
@@ -585,7 +576,6 @@
   }
 }
 
-/* Отключение ховер-эффектов на тач-устройствах */
 @media (hover: none) and (pointer: coarse) {
   .why-card:hover {
     transform: none;
