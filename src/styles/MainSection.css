@@ -1,5 +1,5 @@
 .main-section {
-  height: calc(100vh - 350px);
+  height: calc(100vh - 60px);
   display: flex;
   align-items: center;
   padding: 60px 0;
