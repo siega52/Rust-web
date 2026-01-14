@@ -245,17 +245,6 @@
   .main-title {
     font-size: 56px;
   }
-}
-
-@media (max-width: 1200px) {
-  .main-container {
-    max-width: 1140px;
-    gap: 40px;
-  }
-  
-  .main-title {
-    font-size: 56px;
-  }
   
   .main-content {
     flex: 0 0 50%;
@@ -403,7 +392,7 @@
   
   .main-section {
     padding: 50px 0 30px;
-    min-height: calc(100vh - 300px);
+    min-height: calc(100vh - 600px);
   }
   
   .main-title {
