@@ -52,7 +52,6 @@ const Header = () => {
 
       </div>
 
-      {/* Мобильное меню */}
       <div className={`mobile-menu ${isMobileMenuOpen ? 'active' : ''}`}>
         <a href="#" className="mobile-nav-link">ГЛАВНАЯ</a>
         <a href="#" className="mobile-nav-link">КАТАЛОГ ИГР</a>
